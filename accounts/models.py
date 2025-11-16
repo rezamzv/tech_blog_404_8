@@ -5,7 +5,7 @@ class CustomUser(AbstractUser):
     email = models.EmailField(unique=True)
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['username']
-    age=models.PositiveIntegerField(default=0)
+    age=models.PositiveIntegerField(default=0,)
 
     def __str__(self):
         return self.email
