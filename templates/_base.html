@@ -1,0 +1,43 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{% block page-title %}{% endblock %}</title>
+	<link rel="stylesheet" href={% static 'blog.css' %}>
+</head>
+
+<body>
+
+	<div class="main-box">
+
+		<div class="head-section">
+
+			<div class="head-section-up">
+				<img class="head-section-logo" alt="404" src={% static 'project-management.png' %} >
+				<h1>Welcome to Tech-Blog</h1>
+			</div>
+
+			<div class="head-section-down">
+				<a href="http://127.0.0.1:5500/home" class="head-sectionbtn" id="head-section-home-btn">Home</a>
+				<a href="http://127.0.0.1:5500/login" class="head-sectionbtn" id="head-section-login-btn">Login</a>
+				<a href="http://127.0.0.1:5500/signup" class="head-sectionbtn" id="head-section-signup-btn">Sign Up </a>
+				<a href="http://127.0.0.1:5500/contact" class="head-sectionbtn" id="head-section-contact-btn">Contact
+					Us</a>
+				<img class="head-section-menu-icon" alt="404" src= {% static 'app.png' %}>
+			</div>
+		</div>
+
+
+        {% block main %}
+        {% endblock %}
+
+	</div>
+
+
+</body>
+
+</html>
