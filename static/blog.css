@@ -48,16 +48,22 @@ body {
     margin: 5px;
     padding: 5px;
     background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.439) 1px 1px 3px 1px inset;
+    box-shadow: rgba(131, 131, 131, 0.439) 1px 1px 3px 1px inset,
+                rgba(131, 131, 131, 0.439) -1px -1px 3px 1px inset;
     border-radius: 10px;
 
 }
 
 .head-section-down a:hover {
-    background-color: white;
-    box-shadow: rgba(59, 70, 113, 0.439) 1px 1px 5px 1px inset;
-    border-radius: 20px;
-    transition-duration: 445ms;
+    box-shadow: rgba(0, 0, 0, 0.439) 0 1px 3px;
+    transition-duration: 845ms;
+    animation-duration: 445ms;
+}
+
+.head-section-down a:active {
+    box-shadow: rgba(0, 0, 0, 0.439) 0 5px 10px inset;
+    animation-duration: .1s;
+
 }
 
 
@@ -222,6 +228,16 @@ body {
     font-size: 12px;
     font-weight: bold;
 }
+
+.login-div form input[type="submit"]:hover{
+    box-shadow: rgba(0, 0, 0, 0.439) 0 1px 3px inset;
+    transition-duration: 445ms;
+}
+
+.login-div form input[type="submit"]:active{
+    box-shadow: rgba(0, 0, 0, 0.439) 0 5px 10px inset;
+}
+
 
 .login-div form label {
     display: inline-block;
